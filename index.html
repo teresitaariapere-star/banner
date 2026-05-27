@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -252,7 +253,19 @@
 
     <!-- FOOTER -->
     <footer>
+<script>
+let visitas = localStorage.getItem("visitas");
 
+if(visitas == null){
+    visitas = 0;
+}
+
+visitas++;
+
+localStorage.setItem("visitas", visitas);
+
+document.write("Visitas: " + visitas);
+</script>
         <div class="container">
 
             <div class="footer-grid">
